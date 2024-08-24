@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TradeHaven</title>
+    <link rel="stylesheet" href="css/materialize.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <style>
+        .valignwrapper{
+            margin-top: -40px;
+        }
+        #nav-align{
+            margin-top: -60px;
+        }
+        .input:not([type]), input[type=text]:not(.browser-default), input[type=password]:not(.browser-default), input[type=email]:not(.browser-default), input[type=url]:not(.browser-default), input[type=time]:not(.browser-default), input[type=date]:not(.browser-default), input[type=datetime]:not(.browser-default), input[type=datetime-local]:not(.browser-default), input[type=tel]:not(.browser-default), input[type=number]:not(.browser-default), input[type=search]:not(.browser-default), textarea.materialize-textarea {
+            border-bottom: 1px solid grey !important;
+            box-shadow: 0 1px 0 0 grey !important;
+        }
+        .input-field .prefix.active, label.active{
+            color: grey !important;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="navbar-fixed">
+            <nav class="grey">
+                <div class="container center-on-small-only">
+                    <div class="row valign-wrapper" id="nav-align">
+                        <a href="#sidenav" class="sidenav-trigger right">
+                            <i class="material-icons black-text left">menu</i>
+                        </a>
+                        <div class="col s8 l2 left">
+                            <img src="img/logo.png" alt="" class="responsive-img left" style="max-width: 120px;">
+                        </div>
+                        <div class="col l3 hide-on-small-and-down" id="log">
+                            
+                            <input type="search" name="search-bar" placeholder="Search products and, brands and categories" id="search">
+                        </div>
+                        <div class="col l7 hide-on-small-and-down">
+                            <ul class="right ">
+                                <li><a href="index.html" class="right">
+                                    <i class="material-icons black-text ">account_circle</i><span>Account</span>
+                                </a></li>
+                                <li><a href="index.html" class="right">
+                                    <i class="material-icons black-text ">question_mark_circle</i><span>Help</span>
+                                </a></li>
+                                <li><a href="index.html" class="right">
+                                    <i class="material-icons black-text ">gear</i><span>Settings</span>
+                                </a></li>
+                                <li><a href="index.html" class="right">
+                                    <i class="material-icons black-text ">cart</i><span>Cart</span>
+                                </a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <ul class="grey sidenav" id="sidenav">
+        <li><a href="index.html" class="right">
+            <i class="material-icons black-text ">account_circle</i><span>Account</span>
+        </a></li>
+        <li><a href="index.html" class="right">
+            <i class="material-icons black-text ">question_mark_circle</i><span>Help</span>
+        </a></li>
+        <li><a href="index.html" class="right">
+            <i class="material-icons black-text ">gear</i><span>Settings</span>
+        </a></li>
+        <li><a href="index.html" class="right">
+            <i class="material-icons black-text ">cart</i><span>Cart</span>
+        </a></li>
+    </ul>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/materialize.js"></script>
+    <script>
+        $('.sidenav').sidenav();
+        $('.slider').slider({
+            indicators: false,
+            interval: 5000,
+            height: 500,
+        });
+        $('.collapsible').collapsible();
+        $('.parallax').parallax();
+        $('.materialboxed').materialbox();
+        $('.scrollspy').scrollSpy();
+        $('.fixed-action-btn').floatingActionButton();
+    </script>
+</body>
+</html>
