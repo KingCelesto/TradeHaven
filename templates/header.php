@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/materialize.css">
     <title>TradeHaven</title>
+    <link rel="stylesheet" href="./assets/css/materialize.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <style>
         /* Nav coloring & alignment */
         #nav-align{
             margin-top: -30px;
         }
-        .nav_col{
-            background-color: goldenrod;
-        }
+        /* .nav_col{
+            background-color: red;
+        } */
 
 
         /* Change color of search bar on focus */
@@ -49,6 +49,7 @@
         .bold-text{
             font-weight: bold;
         }
+
         /* changing color of input fields on forms when focused */
         .input-field input:focus{
             border-bottom: 1px solid #4a148c !important;
@@ -73,7 +74,7 @@
     <header>
         <!-- Navbar -->
         <div class="navbar-fixed">
-            <nav class="nav_col">
+            <nav class="nav_col green darken-2">
                 <div class="container center-on-small-only">
                     <div class="row valign-wrapper" id="nav-align">
                         <a href="#sidenav" class="sidenav-trigger right">
@@ -109,7 +110,7 @@
         <div class="modal" id="help">
             <div class="modal-content">
                 <h4>Guide through the page</h4>
-                <p>I cant really help right now</p>
+                <p>I can't really help right now</p>
                 <div class="modal-footer"><a href="#!" class="modal-close">Done</a></div>
             </div>
         </div>
